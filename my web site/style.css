@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' , sans-serif;
+}
+.header{
+    width: auto;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0,7),rgba(0,0,0,0,7)),url(tur1.jpg);
+    background-position: relative;
+    background-size: auto;
+}
+.foots{
+    width: auto;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: #f8f1f1c0;
+    background-size: auto;
+    
+    }
+.footicons .fa{
+    color: f8f4f4c0;
+    margin: 10 19px;
+    cursor: pointer;
+    padding: 17px 0;
+
+    }
+
+
+
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+
+.btn.hover{
+    background-color: blue;
+    color: black;
+}
+
+.p{
+    font-size: 64px;
+}
+#slider{
+    overflow: hidden;
+ }
+#slider figure{
+    position: relative;
+    width: 200%;
+    margin: 0;
+    left: 0;
+    animation: 30s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200;
+    }
+}
+  h1{
+    font-size: 64;
+  }
+  body {
+    background-image: url('tur8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  nav{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: normal;
+}
+.nav-links ul li::after{
+content: "";
+width: 0%;
+height: 2px;
+background: #8f5f5f;
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+width: 90%;
+color:#fff;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+    justify-content: space-between;
+    background: #ca934bc0;
+    height: 50px;
+    line-height: 20px;
+    font-weight: bold;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin:50px 0 40px;
+    font-size: 100px;
+    color:#fff
+}
+
+
+.newsec{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 1px;
+}
+.row{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width700px){
+    .nav-links{
+        flex: 1;
+        text-align: right;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    .nav-links ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #8f5f5f;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width:100%;
+    }
+    .text-box{
+    width: 100%;
+    color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    }
+    .header{
+        width: 100%;
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%,0);
+        display: flex;
+        justify-content: space-between;
+        background: #ca934bc0;
+        height: 50px;
+        line-height: 20px;
+        font-weight: bold;
+    }
+    .text-box h1{
+        font-size: 62px;
+    }
+    .text-box p{
+        margin:10px 0 0px;
+        font-size: 14px;
+        color:#fff
+    }
+}
+.row{
+	display: flex;
+	height: 88%;
+	align-items: center;
+}
+.col{
+	flex-basis: 50%;
+}
+h1{
+	color: #0e0d0d;
+	font-size: 80px;
+}
+p{
+	color: #0c0c0c;
+	font-size: 20px;
+	line-height: 15px;
+}
+
+button{
+	width: 180px;
+	color: #000;
+	font-size: 17px;
+	padding: 12px 0;
+	background: #fff;
+	border: 0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 30px;
+}
+.card{
+	width: 300px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: left;
+	background-image: url(images/t1.jpg);
+	background-size: cover;
+	transition: transform 0.5s;
+}
+.card1{
+	background-image: url(tur9.jpg);
+}
+.card2{
+	background-image: url(dec15.jpeg);
+}
+.card3{
+	background-image: url(tur4.jpeg);
+}
+.card4{
+	background-image: url(dec14.jpeg);
+}
+.card:hover{
+	transform: translateY(-10px);
+}
+h5{
+	color: #000;
+	text-shadow: 0 0 5px #0c0c0c;
+}
+.card p{
+	text-shadow: 0 0 15px #000;
+}
+#donate{
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:25px;
+    min-height: 100vh;
+    background: #EAE9E9;
+    
+  }
+  
+  .container form{
+    padding:20px;
+    width:700px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  }
+  
+  .container form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+  }
+  
+  .container form .row .col{
+    flex:1 1 250px;
+  }
+  
+  .container form .row .col .title{
+    font-size: 20px;
+    color:#333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .container form .row .col .inputBox{
+    margin:15px 0;
+  }
+  
+  .container form .row .col .inputBox span{
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .container form .row .col .inputBox input{
+    width: 100%;
+    border:1px solid #ccc;
+    padding:10px 5px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  
+  .container form .row .col .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .container form .row .col .flex{
+    display: flex;
+    gap:5px;
+  }
+  
+  .container form .row .col .flex .inputBox{
+    margin-top: 5px;
+  }
+  
+  .container form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+  
+  .container form .submit-btn{
+    width: 100%;
+    padding:12px;
+    font-size: 17px;
+    background: #02648B;
+    color:#fff;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .container form .submit-btn:hover{
+    background:#507993;
+  }
